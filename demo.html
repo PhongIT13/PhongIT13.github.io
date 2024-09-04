@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>4 Image Slider</title>
+    <link rel="stylesheet" href="./cssdemo.css"> 
+</head>
+<body>
+<!--Header-->
+<div class="topnav" id="myTopnav">
+    <div>
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+    </div> 
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <i class="fa fa-align-justify"></i>
+    </a>
+    </div>
+  </div>
+<!--Body-->
+<div style="margin-top: 70px;">
+
+</div>
+      <div class="slider">
+        <div class="slides">
+            <img src="./Ảnh/f1.jpg" alt="Slide 1">
+            <img src="./Ảnh/f2.jpg" alt="Slide 2">
+            <img src="./Ảnh/f3.jpg" alt="Slide 3">
+            <img src="./Ảnh/f4.jpg" alt="Slide 4">
+        </div>
+        <div class="navigation">
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+    </div>
+      <div style="padding-left:16px">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+      </div>
+    <div class="video-container">
+        <video controls>
+            <source src="./Ảnh/wk .mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+    </div>
+    <div class="audio-container">
+        <h2>Play Audio</h2>
+        <audio controls>
+            <source src="./Ảnh/y2mate.com - SƠN TÙNG MTP  CHÚNG TA CỦA TƯƠNG LAI  OFFICIAL MUSIC VIDEO.mp3" type="audio/mp3">
+            Trình duyệt của bạn không hỗ trợ thẻ audio.
+        </audio>
+    </div>
+    <!--Cau hoi-->
+    <div class="container">
+        <h1>Quiz Form</h1>
+        <form id="quizForm">
+            <table>
+                <tr>
+                    <th>Câu hỏi</th>
+                    <th>Trả lời</th>
+                </tr>
+                <!-- True/False Question 1 -->
+                <tr>
+                    <td class="question">1. Hổ thuộc họ nhà mèo.</td>
+                    <td class="options">
+                        <label><input type="radio" name="q1" value="true"> Đúng</label>
+                        <label><input type="radio" name="q1" value="false"> Sai</label>
+                    </td>
+                </tr>
+                <!-- True/False Question 2 -->
+                <tr>
+                    <td class="question">2. 1+1=3</td>
+                    <td class="options">
+                        <label><input type="radio" name="q2" value="true"> Đúng</label>
+                        <label><input type="radio" name="q2" value="false"> Sai</label>
+                    </td>
+                </tr>
+                <!-- Single Answer Question 1 -->
+                <tr>
+                    <td class="question">3. CuCl<sub>2</sub> khan có màu gì</td>
+                    <td class="options">
+                        <label><input type="radio" name="q3" value="a"> Nâu</label>
+                        <label><input type="radio" name="q3" value="b"> Xanh lam</label>
+                        <label><input type="radio" name="q3" value="c"> Vàng</label>
+                        <label><input type="radio" name="q3" value="d"> Màu nước mắt</label>
+                    </td>
+                </tr>
+                <!-- Single Answer Question 2 -->
+                <tr>
+                    <td class="question">4. Ai là tác giả của bài thơ Việt Bắc</td>
+                    <td class="options">
+                        <label><input type="radio" name="q4" value="a"> Nam Cao</label>
+                        <label><input type="radio" name="q4" value="b"> Xuân Quỳnh</label>
+                        <label><input type="radio" name="q4" value="c"> Tố Hữu</label>
+                        <label><input type="radio" name="q4" value="d"> Chính Hữu</label>
+                    </td>
+                </tr>
+                <!-- Multi Answer Question -->
+                <tr>
+                    <td class="question">5. Chú Voi con</td>
+                    <td class="options multi-answer">
+                        <label><input type="checkbox" name="q5" value="a"> Ở Bản Đôn</label>
+                        <label><input type="checkbox" name="q5" value="b"> Chưa có ngà</label>
+                        <label><input type="checkbox" name="q5" value="c"> Ăn nhiều</label>
+                        <label><input type="checkbox" name="q5" value="d"> Béo</label>
+                        <label><input type="checkbox" name="q5" value="e"> Nghịch ngợm</label>
+                        <label><input type="checkbox" name="q5" value="f"> Ham chơi</label>
+                    </td>
+                </tr>
+                <!-- Short Answer Question -->
+                <tr>
+                    <td class="question">6. Nhóm mình là nhóm.</td>
+                    <td><input type="text" name="q6" style="width: 100%; padding: 8px;"></td>
+                </tr>
+                <!-- Drag and Drop Question -->
+                <tr>
+                    <td class="question">7. Gương nào cho ảnh phản chiếu to hơn vật.</td>
+                    <td>
+                        <div class="drag-and-drop">
+                            <div id="item1" class="drag-item" draggable="true">Cầu lõm</div>
+                            <div id="item2" class="drag-item" draggable="true">Phẳng</div>
+                            <div id="item3" class="drag-item" draggable="true">Cầu lồi</div>
+                            <div class="drop-zone" id="dropZone">Thả vào đây</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <button type="button" class="submit-button" onclick="submitQuiz()">Nộp Bài</button>
+            <button type="button" class="reset-button" onclick="resetQuiz()">Làm Lại</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="./jsdemo.js">
+      
+    </script>
+
+</body>
+</html>
